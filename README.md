@@ -1,5 +1,12 @@
 # Tate
 
+
+[![Travis](https://img.shields.io/travis/krmbzds/tate.svg)](https://travis-ci.org/krmbzds/tate)
+[![Code Climate](https://img.shields.io/codeclimate/github/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate)
+[![Gem](https://img.shields.io/gem/dt/tate.svg)](https://rubygems.org/gems/tate)
+[![Gem](https://img.shields.io/gem/v/tate.svg)](https://rubygems.org/gems/tate)
+
+
 **tate** helps you convert accented characters to ASCII.
 
 **tate** is a productivity tool, it behaves like a standard Unix application and can be chained with other Unix commands. It only reads from standard input and writes to standard output.
