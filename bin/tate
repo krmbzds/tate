@@ -4,6 +4,6 @@
 lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
 $LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
 
-require "transliterate"
+require "tate"
 
-STDOUT.puts Transliterate::transliterate(STDIN.read)
+STDOUT.puts Tate::transliterate(STDIN.read)
