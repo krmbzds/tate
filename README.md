@@ -4,26 +4,6 @@
 
 **tate** is a productivity tool, it behaves like a standard Unix application and can be chained with other Unix commands. It only reads from standard input and writes to standard output.
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'tate'
-```
-
-And then execute:
-
-```sh
-$ bundle
-```
-
-Or install it yourself as:
-
-```sh
-$ gem install tate
-```
-
 ## Examples
 
 Let's say you have a French sentence with a lot of weird characters and you want to convert it into ASCII in the most representative way. You can use:
@@ -50,6 +30,26 @@ If you call `tate` without providing any input, like a standard Unix command it 
 ## Is it any good?
 
 Yes.
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+```ruby
+gem 'tate'
+```
+
+And then execute:
+
+```sh
+$ bundle
+```
+
+Or install it yourself as:
+
+```sh
+$ gem install tate
+```
 
 ## Contributing
 
