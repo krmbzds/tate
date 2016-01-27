@@ -1,8 +1,8 @@
 # Tate
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tate`. To experiment with that code, run `bin/console` for an interactive prompt.
+**tate** helps you convert accented characters to ASCII.
 
-TODO: Delete this and the text above, and describe your gem
+**tate** is a productivity tool, it behaves like a standard Unix application and can be chained with other Unix commands. It only reads from standard input and writes to standard output.
 
 ## Installation
 
@@ -14,22 +14,57 @@ gem 'tate'
 
 And then execute:
 
-    $ bundle
+```sh
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install tate
+```sh
+$ gem install tate
+```
 
-## Usage
+## Examples
 
-TODO: Write usage instructions here
+Let's say you have a French sentence with a lot of weird characters and you want to convert it into ASCII in the most representative way. You can use:
 
-## Development
+```sh
+echo "Le cœur de la crémiére" | tate  
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+This will output:
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```
+Le coeur de la cremiere
+```
+
+Or you might want to create a purely ASCII version of some file:
+
+```sh
+cat customers.csv | tate > customers_tated.csv
+```
+
+If you call `tate` without providing any input, like a standard Unix command it will expect you to provide input using the keyboard. After you are done typing you can use `cmd + D` shortcut to trigger `EOL (End of Line)`. You will see that the text you typed into the terminal is converted to ASCII.
+
+
+## Is it any good?
+
+Yes.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/krmbzds/tate.
+1. Fork it (https://github.com/krmbzds/tate/fork)
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+## Trivia
+
+**tate** is short for **transliterate**.  
+Nobody has time to type transliterate in the terminal.
+
+## License
+
+The MIT License (MIT)  
+Copyright (c) 2016 Kerem Bozdas
