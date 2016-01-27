@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.executables   = ["transliterate"]
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency 'activerecord', '~> 4.2', '>= 4.2.5.1'
