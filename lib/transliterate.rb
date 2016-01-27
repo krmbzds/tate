@@ -1,5 +1,12 @@
 require "transliterate/version"
 
+require 'active_support/core_ext/string/multibyte'
+require 'active_support/i18n'
+
 module Transliterate
-  # Your code goes here...
+  def self.transliterate(string, replacement = "?".freeze)
+    I18n.transliterate(ActiveSupport::Multibyte::Unicode.normalize(
+      ActiveSupport::Multibyte::Unicode.tidy_bytes(string), :c),
+        :replacement => replacement)
+  end
 end
