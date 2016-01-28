@@ -71,6 +71,13 @@ $ gem install tate
 **tate** is short for **transliterate**.  
 Nobody has time to type transliterate in the terminal.
 
+## Todo
+
+:white_medium_square: Handling conversions based on language.
+
+For example, in Turkish `ü` would always be transliterated as  `u`.  
+However, in German, `ü` could be transliterated as `ue` (e.g. Mueller).
+
 ## License
 
 The MIT License (MIT)  
