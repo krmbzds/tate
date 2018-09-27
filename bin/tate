@@ -4,6 +4,32 @@
 lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
 $LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
 
-require "tate"
+require 'tate'
+require 'optionparser'
 
-STDOUT.puts Tate::transliterate(STDIN.read)
+options = {}
+
+option_parser = OptionParser.new do |opts|
+  opts.banner = 'Usage: tate [options]'
+  opts.on("-l[LANGUAGE]", "--lang=[LANGUAGE]", String, 'Set language for custom filters') do |language|
+    options[:language] = language
+  end
+  opts.on('-h', '--help', 'Show this message') do
+    options[:help] = true
+  end
+  opts.on('-v', '--version', 'Show version') do
+    options[:version] = Tate::VERSION
+  end
+end
+
+option_parser.parse!
+
+if options[:language]
+  STDOUT.puts(Tate::transliterate(STDIN.read, language=options[:language]))
+elsif options[:version]
+  STDOUT.puts(options[:version])
+elsif options.empty?
+  STDOUT.puts(Tate::transliterate(STDIN.read))
+else
+  STDOUT.puts(option_parser.help)
+end
