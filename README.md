@@ -2,7 +2,7 @@
 
 [![Build Status](https://img.shields.io/travis/krmbzds/tate.svg)](https://travis-ci.org/krmbzds/tate)
 [![Code Coverage](https://img.shields.io/codeclimate/coverage/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate/test_coverage)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/krmbzds/tate.svg)](https://api.codeclimate.com/v1/badges/3283dc64bcae64dff214/maintainability)
+[![Maintainability](https://img.shields.io/codeclimate/maintainability/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate/maintainability)
 [![Downloaded](https://img.shields.io/gem/dt/tate.svg)](https://rubygems.org/gems/tate)
 [![Gem Version](https://img.shields.io/gem/v/tate.svg)](https://rubygems.org/gems/tate)
 
