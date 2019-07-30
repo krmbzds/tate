@@ -137,7 +137,7 @@ You can add custom language filters under `lib/rules` directory.
 
 ### Donations
 
-You can donate me at [Librepay](https://liberapay.com/krmbzds/donate). Thanks! ☕️
+You can donate me at [Liberapay][Donation]. Thanks! ☕️
 
 ## Trivia
 
@@ -147,9 +147,10 @@ Nobody has time to type transliterate in the terminal.
 
 ## License
 
-Copyright © 2018 [Kerem Bozdas][Personal Webpage]
+Copyright © 2019 [Kerem Bozdas][Personal Webpage]
 
 This project is available under the terms of the [MIT License][License].
 
+[Donation]: https://liberapay.com/krmbzds/donate
 [Personal Webpage]: http://kerembozdas.com
 [License]: http://kerem.mit-license.org
