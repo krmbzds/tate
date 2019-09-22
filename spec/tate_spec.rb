@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Tate do
   it 'transliterates a azeri sentence' do
     orig = 'Zəfər, jaketini də papağını da götür, bu axşam hava çox soyuq olacaq. Əvvəl düşün, sonra danış'
-    t13n = 'Zefer, zhaketini de papaghini da gotur, bu akhsham hava chokh soyug olajag. Evvel dushun, sonra danish'
+    t13n = 'Zefer, jaketini de papagini da gotur, bu axsam hava cox soyuq olacaq. Evvel dusun, sonra danis'
     expect(Tate::transliterate(orig, language='az')).to eq(t13n)
   end
 
