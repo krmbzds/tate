@@ -104,13 +104,13 @@ curl gov.bg/bg | tate --lang=bg > index.html
 There are custom filters for:
 
 ```
-Azeri, Bulgarian, Catalan, French, German, Hungarian, Polish, Romanian, Spanish, and Vietnamese.
+Azeri, Bulgarian, Catalan, French, German, Hungarian, Polish, Romanian, Portuguese, Spanish, and Vietnamese.
 ```
 
 The following languages are known to work (w/o custom filters):
 
 ```
-Croatian, Czech, Danish, Esperanto, Estonian, Finnish, Icelandic, Latvian, Lithuania, Norwegian, Portuguese, Scottish, Slovak, Slovenian, Swedish, Turkish, and Welsh.
+Croatian, Czech, Danish, Esperanto, Estonian, Finnish, Icelandic, Latvian, Lithuania, Norwegian, Scottish, Slovak, Slovenian, Swedish, Turkish, and Welsh.
 ```
 
 What's next?
@@ -135,7 +135,7 @@ Yes.
 
 You can add custom language filters under `lib/rules` directory.
 
-### Donations
+### Donations ❤️
 
 You can donate me at [Liberapay][Donation]. Thanks! ☕️
 
