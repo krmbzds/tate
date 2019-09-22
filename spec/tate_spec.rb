@@ -109,10 +109,10 @@ describe Tate do
     expect(Tate::transliterate(orig, language='pl')).to eq(t13n)
   end
 
-  it 'transliterates a portuguese sentence [generic]' do
+  it 'transliterates a portuguese sentence' do
     orig = 'Luís argüia à Júlia que «brações, fé, chá, óxido, pôr, zângão» eram palavras do português.'
     t13n = 'Luis arguia a Julia que "bracoes, fe, cha, oxido, por, zangao" eram palavras do portugues.'
-    expect(Tate::transliterate(orig)).to eq(t13n)
+    expect(Tate::transliterate(orig, language='pt')).to eq(t13n)
   end
 
   it 'transliterates a romanian sentence' do
