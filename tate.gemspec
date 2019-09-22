@@ -6,6 +6,7 @@ require 'tate/version'
 Gem::Specification.new do |spec|
   spec.name          = 'tate'
   spec.version       = Tate::VERSION
+  spec.licenses      = 'MIT'
   spec.authors       = ['Kerem Bozdas']
   spec.email         = ['krmbzds.github@gmail.com']
 
