@@ -8,6 +8,7 @@ require 'yaml'
 
 I18n.load_path << Dir[File.expand_path("lib/config/locales/*.yml")]
 I18n.enforce_available_locales = false
+I18n.default_locale = :en
 
 module Tate
   def self.transliterate(string, language = nil, replacement = "?".freeze)
