@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.executables   = ['tate']
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'activerecord'
+  spec.add_runtime_dependency 'i18n'
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'

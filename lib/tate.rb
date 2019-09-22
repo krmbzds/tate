@@ -3,8 +3,7 @@ $LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
 
 require "tate/version"
 
-require 'active_support/core_ext/string/multibyte'
-require 'active_support/i18n'
+require 'i18n'
 require 'yaml'
 
 module Tate
