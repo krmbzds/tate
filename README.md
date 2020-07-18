@@ -123,9 +123,23 @@ Russian, Irish, Arabic, and Yoruba.
 
 Yes.
 
+## Support
+
+This gem is tested against the following Ruby versions:
+
+- ✅ `2.7.1` (stable)
+- ✅ `2.6.6` (stable)
+- ⏳ `2.5.8` (security maintenance)
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org][RubyGems].
+
 ## Contributing
 
-1. Fork it (https://github.com/krmbzds/tate/fork)
+1. [Fork the repository][Fork]
 2. Create your feature branch (`git checkout -b add-irish-support`)
 3. Commit your changes (`git commit -am 'Add Irish language support'`)
 4. Push to the branch (`git push origin add-irish-support`)
@@ -147,10 +161,12 @@ Nobody has time to type transliterate in the terminal.
 
 ## License
 
-Copyright © 2019 [Kerem Bozdas][Personal Webpage]
+Copyright © 2016-2020 [Kerem Bozdas][Personal Webpage]
 
 This project is available under the terms of the [MIT License][License].
 
 [Donation]: https://liberapay.com/krmbzds/donate
-[Personal Webpage]: http://kerembozdas.com
+[Fork]: https://github.com/krmbzds/tate/fork
 [License]: http://kerem.mit-license.org
+[Personal Webpage]: http://kerembozdas.com
+[RubyGems]: https://rubygems.org
