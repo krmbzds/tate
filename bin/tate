@@ -10,12 +10,12 @@ require 'optionparser'
 options = {}
 
 option_parser = OptionParser.new do |opts|
-  opts.banner = 'Usage: tate [options]'
-  opts.on('-l[LANGUAGE]', '--lang=[LANGUAGE]', String, 'Set language for custom filters') do |language|
+  opts.banner = 'Usage: tate [-l LANGUAGE]'
+  opts.on('-l LANGUAGE', '--language LANGUAGE', String, 'Set language for custom filters') do |language|
     options[:language] = language
   end
   opts.on('-h', '--help', 'Show this message') do
-    options[:help] = true
+    options[:help] = opts.help
   end
   opts.on('-v', '--version', 'Show version') do
     options[:version] = Tate::VERSION
@@ -31,5 +31,5 @@ elsif options[:version]
 elsif options.empty?
   STDOUT.puts(Tate.transliterate(STDIN.read))
 else
-  STDOUT.puts(option_parser.help)
+  STDOUT.puts(options[:help])
 end

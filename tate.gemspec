@@ -16,7 +16,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/krmbzds/tate'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.files         += Dir['lib/config/locales/*.yml']
   spec.bindir        = 'bin'
   spec.executables   = ['tate']
   spec.require_paths = ['lib']
