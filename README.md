@@ -1,9 +1,9 @@
 # Tate ✍️
 
-[![Build Status](https://img.shields.io/travis/krmbzds/tate.svg)](https://travis-ci.org/krmbzds/tate)
-[![Code Coverage](https://img.shields.io/codeclimate/coverage/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate/test_coverage)
+[![Build Status](https://img.shields.io/github/workflow/status/krmbzds/tate/Test/master)](https://github.com/krmbzds/tate/actions/workflows/test.yml)
+[![Coveralls](https://img.shields.io/coveralls/github/krmbzds/tate)](https://coveralls.io/github/krmbzds/tate) 
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate/maintainability)
-[![Downloaded](https://img.shields.io/gem/dt/tate.svg)](https://rubygems.org/gems/tate)
+[![Downloads](https://img.shields.io/gem/dt/tate.svg)](https://rubygems.org/gems/tate)
 [![Gem Version](https://img.shields.io/gem/v/tate.svg)](https://rubygems.org/gems/tate)
 
 **Tate** converts accented characters and transliterates non-latin scripts to their closest ASCII equivalent.
@@ -127,9 +127,10 @@ Yes.
 
 This gem is tested against the following Ruby versions:
 
-- ✅ `2.7.1` (stable)
-- ✅ `2.6.6` (stable)
-- ⏳ `2.5.8` (security maintenance)
+- ✅ `3.1.1` (stable)
+- ✅ `3.0.3` (stable)
+- ✅ `2.7.5` (stable)
+- ⏳ `2.6.9` (security maintenance)
 
 ## Development
 
@@ -161,7 +162,7 @@ Nobody has time to type transliterate in the terminal.
 
 ## License
 
-Copyright © 2016-2020 [Kerem Bozdas][Personal Webpage]
+Copyright © 2016-2022 [Kerem Bozdas][Personal Webpage]
 
 This project is available under the terms of the [MIT License][License].
 

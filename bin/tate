@@ -1,23 +1,23 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-lib = File.expand_path(File.dirname(__FILE__) + '/../lib')
+lib = File.expand_path(File.dirname(__FILE__) + "/../lib")
 $LOAD_PATH.unshift(lib) if File.directory?(lib) && !$LOAD_PATH.include?(lib)
 
-require 'tate'
-require 'optionparser'
+require "tate"
+require "optionparser"
 
 options = {}
 
 option_parser = OptionParser.new do |opts|
-  opts.banner = 'Usage: tate [-l LANGUAGE]'
-  opts.on('-l LANGUAGE', '--language LANGUAGE', String, 'Set language for custom filters') do |language|
+  opts.banner = "Usage: tate [-l LANGUAGE]"
+  opts.on("-l LANGUAGE", "--language LANGUAGE", String, "Set language for custom filters") do |language|
     options[:language] = language
   end
-  opts.on('-h', '--help', 'Show this message') do
+  opts.on("-h", "--help", "Show this message") do
     options[:help] = opts.help
   end
-  opts.on('-v', '--version', 'Show version') do
+  opts.on("-v", "--version", "Show version") do
     options[:version] = Tate::VERSION
   end
 end
