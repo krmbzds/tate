@@ -1,6 +1,6 @@
 # Tate ✍️
 
-[![Build Status](https://img.shields.io/github/workflow/status/krmbzds/tate/Test/master)](https://github.com/krmbzds/tate/actions/workflows/test.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/krmbzds/tate/test.yml?branch=master)](https://github.com/krmbzds/tate/actions/workflows/test.yml)
 [![Coveralls](https://img.shields.io/coveralls/github/krmbzds/tate)](https://coveralls.io/github/krmbzds/tate) 
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/krmbzds/tate.svg)](https://codeclimate.com/github/krmbzds/tate/maintainability)
 [![Downloads](https://img.shields.io/gem/dt/tate.svg)](https://rubygems.org/gems/tate)
@@ -162,7 +162,7 @@ Nobody has time to type transliterate in the terminal.
 
 ## License
 
-Copyright © 2016-2022 [Kerem Bozdas][Personal Webpage]
+Copyright © 2016-2023 [Kerem Bozdas][Personal Webpage]
 
 This project is available under the terms of the [MIT License][License].
 
